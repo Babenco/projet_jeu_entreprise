@@ -89,6 +89,22 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
+[node name="LineEdit" type="LineEdit" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 551.0
+margin/top = 71.0
+margin/right = 735.0
+margin/bottom = 95.0
+placeholder/text = "Nom"
+placeholder/alpha = 0.6
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
 [connection signal="button_down" from="ButtonFinTour" to="." method="next_turn"]
 
 [connection signal="value_changed" from="HSliderEmployees" to="." method="set_employees"]
