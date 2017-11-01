@@ -25,7 +25,7 @@ func update_treasury():
 	
 func update_employees():
 	get_node("HSliderEmployees").set_value(current_employees)
-	get_node("LabelEmployees").set_text("Employés : " + str(current_employees))
+	get_node("LabelEmployees").set_text("Salariés " + str(current_employees))
 	
 func next_turn():
 	# CA du mois
@@ -39,7 +39,7 @@ func next_turn():
 	update_treasury()
 	# Affichage tour
 	current_turn += 1
-	get_node("LabelTour").set_text("Tour " + str(current_turn))
+	get_node("LabelTour").set_text("Mois " + str(current_turn))
 	
 func set_employees(n):
 	current_employees = int(n)
