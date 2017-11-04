@@ -1,0 +1,57 @@
+Background : Botman veut prouver à ses parents qu'il peut créer une entreprise de savons. Ses parents prédisent qu'il va se planter en même pas deux ans.
+Objectif du jeu : tenir 24 mois avec une trésorerie positive (pas de faillite).
+
+----------------
+Fonction de coût
+----------------
+
+Matières premières :
+    1. Perles de soude caustique. En moyenne, 8€/kg.
+    2. Huile d'olive extra vierge. En moyenne, 5€/kg.
+    3. Eau déminéralisée. En moyenne, 0,70€/kg.
+
+Travailleurs :
+    1. Un travailleur peut produire en moyenne 260 savons par mois.
+    2. Un travailleur payé au SMIC à temps plein coûte 1400€ par mois.
+
+Capital :
+    1. Pour l'instant on laisse de côté dividendes, intérêts et impôts.
+    2. Pour l'instant on laisse de côté les machines à acheter.
+    3. Le reste est la trésorerie de l'entreprise.
+
+
+----------------------
+Fonction de production
+----------------------
+
+La recette :
+    1. Pour produire un savon, il faut utiliser 1/4 d'eau pour 1 unité d'huile, et 1/8 de soude pour 1 unité d'huile.
+       Donc si on achète en pack 8kg d'huile, 2kg d'eau et 1kg de soude (= 70,4€), on peut produire 100 savons.
+
+Les facteurs de production :
+    1. Un travailleur peut produire en moyenne 300 savons par mois, pas plus.
+    2. Par conséquent, on ne peut pas augmenter la production de savons si on achète 4 packs de matières premières avec un travailleur.
+    3. Plus tard, il faudra intégrer des équipements pour les travailleurs ; et des machines améliorant leur productivité (400 savons par mois par ex).
+
+
+-------------------
+Fonction de recette
+-------------------
+
+Le chiffre d'affaires :
+    1. Il est défini comme le produit du prix de vente et de la quantité produite.
+    2. Le prix d'un savon est en moyenne de 5€. Donc, le prix de 100 savons est de 500€.
+    3. La quantité est déterminée par les matières premières et travailleurs disponibles (voir fonction de production).
+
+Exemple :
+    Avec les données proposées, un joueur qui pousse la production à fond avec un travailleur a 3*500 = 1500€ de recettes ; 1400 + 70,4 = 1470,4€ de coûts ; donc 29,6€ de profit.
+
+   
+--------------------
+Pour aller plus loin
+--------------------
+
+Les perspectives d'amélioration à partir de ce moule de départ sont :
+    1. Introduire un peu d'aléatoire dans la détermination mensuelle de chaque prix où j'ai écrit "en moyenne".
+    2. Élargir les choix du joueur, notamment en proposant des machines qui améliorent les travailleurs ou les remplacent.
+    3. Proposer une fonction de coût non linéaire mais du second degré (le joueur doit chercher la quantité qui minimise son coût).
